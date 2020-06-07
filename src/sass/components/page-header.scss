@@ -1,0 +1,11 @@
+.page-header {
+    background-image: linear-gradient(
+        $header-gradient-bright,
+        $header-gradient-light
+      ),
+      url("../images/eagle.png");
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 230px;
+    
+  }
