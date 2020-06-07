@@ -1,0 +1,14 @@
+.site-logo {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+  transition: color 0.2s linear, transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #fce38a;
+  }
+}

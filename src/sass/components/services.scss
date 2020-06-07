@@ -1,0 +1,63 @@
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+  
+.services__item {
+  max-width: 355px;
+  padding-left: 60px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.services__item-heading {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-family: $main-font;
+  color: $primary-dark-color;
+  text-align: left;
+}
+  
+.services__item-text {
+  margin: 0 0 92px;
+  font-size: 15px;
+  font-family: $text-font;
+  color: $primary-text-color;
+  line-height: 1.6;
+}
+
+.services__icon--clock::before {
+  background-image: url("../images/services_icons/clock.svg");
+}
+  
+.services__icon--graph::before {
+  background-image: url("../images/services_icons/graph.svg");
+}
+  
+.services__icon--comp::before {
+  background-image: url("../images/services_icons/comp.svg");
+}
+  
+.services__icon--book::before {
+  background-image: url("../images/services_icons/book.svg");
+}
+  
+.services__icon--house::before {
+  background-image: url("../images/services_icons/house.svg");
+}
+  
+.services__icon--image::before {
+  background-image: url("../images/services_icons/image.svg");
+}

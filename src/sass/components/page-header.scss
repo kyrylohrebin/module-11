@@ -1,11 +1,50 @@
 .page-header {
-    background-image: linear-gradient(
-        $header-gradient-bright,
-        $header-gradient-light
-      ),
-      url("../images/eagle.png");
-    background-size: cover;
-    background-position: top center;
-    padding-bottom: 230px;
-    
+  background-image: linear-gradient(
+      $gradient-bright,
+      $gradient-light
+    ),
+    url('../images/eagle.png');
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 230px;
+
+  &__heading {
+    width: 980px;
+    margin: 0 auto 120px;
+    font-size: 150px;
+    color: $primary-white-color;
   }
+
+  &__heading--span {
+    font-size: 72px;
+    color: $primary-white-color;
+  }
+
+  &__btn {
+    width: 170px;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: bold;
+    color: $primary-white-color;
+    border: 3px solid $primary-white-color;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    line-height: 1.2;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: rgb(243, 129, 129);
+      border: 3px solid rgb(243, 129, 129);
+    }
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        $gradient-bright,
+        $gradient-light
+      ),
+      url('../img/eagle@2x.png');
+  }
+}

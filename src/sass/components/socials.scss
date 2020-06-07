@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  padding: 0;
+
+  &__item {
+    width: 58px;
+    height: 58px;
+    background-repeat: no-repeat;
+    background-color: $main-light-color;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+      
+    &:hover {
+      background-color: $main-bright-color;
+    }
+
+    &:hover .icon {
+      fill: $primary-white-color;
+    }
+
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  fill: $main-bright-color;
+  transition: fill 0.2s linear;
+}

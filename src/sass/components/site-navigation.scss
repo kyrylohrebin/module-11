@@ -1,0 +1,38 @@
+.site-navigation {
+  width: 620px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    padding: 10px 0 10px;
+    color: $primary-white-color;
+    transition: color 0.2s linear, border-bottom 0.2s linear;
+  }
+
+  &__item:not(:nth-child(n + 6)) {
+    font-size: 14px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  &__svg {
+    fill: $primary-white-color;
+    width: 18px;
+    height: 18px;
+    transition: fill 0.2s linear;
+  }
+  
+  &__item:hover .link {
+    color: $main-light-color;
+    border-bottom: 3px solid $main-light-color;
+  }
+  
+  &__button:hover &__svg {
+    fill: $main-light-color;
+  }
+}

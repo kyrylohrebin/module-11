@@ -4,11 +4,21 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
-@import 'helpers/variables.scss';
+@import 'fonts.scss';
+@import './helpers/variables.scss';
 
 /*COMPONENTS*/
 
-@import 'components/container.scss';
-@import 'components/link.scss';
-@import 'components/list.scss';
-@import 'components/button.scss';
+@import './components/container.scss';
+@import './components/link.scss';
+@import './components/list.scss';
+@import './components/button.scss';
+@import './components/heading.scss';
+@import './components/page-header.scss';
+@import './components/site-logo.scss';
+@import './components/page-nav.scss';
+@import './components/site-navigation.scss';
+@import './components/services.scss';
+@import './components/team.scss';
+@import './components/socials.scss';
+@import './components/page-footer.scss';
